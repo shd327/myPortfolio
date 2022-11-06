@@ -7,17 +7,17 @@ nav {
   background-color: aqua;
 }
 
-ul {
+nav ul {
   display: flex;
   justify-content: flex-end;
   margin-right: 30px;
 }
-li {
+nav li {
   list-style: none;
   padding: 20px;
 }
 .container {
-  position: absolute;
+  /* position: absolute; */
   width: 100vw;
   height: 60vh;
   background-color: gray;
@@ -25,6 +25,7 @@ li {
   justify-content: center;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
 }
 .intro {
   position: relative;
@@ -56,4 +57,69 @@ img {
 .mainImg {
   position: relative;
   right: 200px;
+}
+
+.aboutMe {
+  width: 100vw;
+  height: 40vh;
+  background-color: brown;
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 100px;
+  /* gap: 300px; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+.aboutMe p {
+  align-items: center;
+  color: aliceblue;
+  width: 50vw;
+}
+.aboutMe h1 {
+  padding-top: 8vh;
+  max-width: 10vw;
+  border-right: 10px solid white;
+}
+
+.projects {
+  display: flex;
+  display: grid;
+  /* justify-content: space-between; */
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  padding: 100px;
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+}
+.projects img {
+  margin: 20px;
+}
+.projects h1 {
+  padding-top: 8vh;
+  max-width: 10vw;
+  border-right: 10px solid white;
+}
+.contactMe {
+  width: 100vw;
+  height: 30vh;
+  background-color: coral;
+  /* display: flex; */
+}
+.contactMe ul {
+  display: flex;
+  justify-content: space-around;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  /* gap: -50px; */
+  /* grid-auto-rows: minmax(100px, auto); */
+  /* 
+  justify-content: space-evenly;
+  align-items: baseline; */
+}
+.contactMe li {
+  list-style: none;
+  padding: -200px;
 }
